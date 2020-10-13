@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Raleway&display=swap");
+
+.homepage {
+  margin: 140px auto 70px auto;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.what-we-do {
+  width: 50%;
+}
+.what-we-do__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px;
+}
+.what-we-do__body {
+  margin: 30px 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #544837;
+}
+.what-we-do__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.what-we-do__btns > a:nth-child(1) {
+  height: 66px;
+  width: 245px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  background-color: #0025b4;
+  background-image: url("../images-&-icons/hire-us-btn.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.what-we-do__btns > a:nth-child(1):hover {
+  box-shadow: 0 0 5px #0025b4;
+  transition: all 200ms;
+}
+
+.what-we-do-btn__two span:nth-child(1) {
+  height: 17px;
+  width: 20px;
+  background-image: url("../images-&-icons/what-we-do-btn.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+.what-we-do-btn__two span:nth-child(2) {
+  font-family: Trueno;
+  font-weight: 700;
+  color: #0025b4;
+}
+.service__img-box {
+  width: 50%;
+  height: 400px;
+  background-image: url("../images-&-icons/service-image.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* -------BREAK POINTS @ 768px---------- */
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .what-we-do {
+    width: 100%;
+    text-align: center;
+  }
+  .what-we-do__btns {
+    flex-direction: column;
+  }
+  .service__img-box {
+    width: 100%;
+ 
+  }
+}
+/* -------BREAK POINTS @ 500px---------- */
+@media (max-width: 560px) {
+}
+/* -------REGIONAL FRANCHISE STYLES-------- */
+.regional-franchise {
+  margin: 50px 0;
+}
+
+.regional-franchise__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.regional-franchise__title span:nth-child(1) {
+  display: inline-block;
+  height: 53px;
+  width: 53px;
+  background-image: url("../images-&-icons/logo.svg");
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.regional-franchise__title span:nth-child(2) {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  text-align: center;
+}
+
+.regional-franchise__bdy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.regional-franchise-bdy_img {
+  width: 500px;
+  height: 400px;
+  background-image: url("../images-&-icons/regiona-franchise.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.regional-franchise-bdy_txt {
+  width: 60%;
+  text-align: right;
+  font-family: "Raleway", sans-serif;
+}
+
+.regional-franchise-bdy_txt div:nth-child(2) {
+  font-family: Trueno, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #01114c;
+  margin: 20px 0;
+}
+
+.signup-btn {
+  display: inline-block;
+  padding: 10px 50px;
+  background: #0025b4;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: Trueno, sans-serif;
+  font-size: 20px;
+  letter-spacing: 0px;
+}
+
+.signup-btn:hover {
+  box-shadow: 0 0 5px #0025b4;
+  transition: all 200ms;
+}
+/* --BREAK POINTS FOR REGIONAL FRANCHISE @560px------ */
+
+@media (max-width: 560px) {
+  .regional-franchise__title span:nth-child(2) {
+    font-size: 18px;
+  }
+  .regional-franchise__bdy {
+    flex-direction: column;
+  }
+  .regional-franchise-bdy_img {
+    background-position: center;
+  }
+  .regional-franchise-bdy_txt {
+    width: 90%;
+    text-align: center;
+  }
+}
+/* ------OUR PERTNERS STYLES-------- */
+.our-partners {
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images-&-icons/try-us.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.our-partners_title,
+.our-partners p {
+  width: 80%;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  font-family: Trueno, sans-serif;
+}
+.our-partners_title {
+  margin-top: 60px;
+}
+.our-partners_title span {
+  color: #1b1e76;
+  font-size: 25px;
+  font-weight: 700;
+}
+.our-partners p {
+  margin: 32px 0;
+}
+
+.our-partners div:nth-child(3) {
+  display: inline-block;
+  padding: 10px 50px;
+  background: #0025b4;
+  border-radius: 5px;
+  font-family: Trueno, sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.our-partners div:nth-child(3):hover {
+  box-shadow: 0 0 5px #0025b4;
+  transition: all 200ms;
+}
+
+/* ------OUR CLIENT STYLES-------- */
+.our-clients_title {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-align: center;
+  margin: 74px 0;
+}
+.cleints {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.cleint {
+  width: 40%;
+  margin: 53px;
+}
+.cleint div:nth-child(1) {
+  box-shadow: 0px 15px 55px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  font-family: Trueno, sans-serif;
+}
+.cleint_img-cont {
+  text-align: right;
+  margin: 20px 0;
+}
+
+/* -------BREAK POINTS @ 1024px---------- */
+@media (max-width: 1024px) {
+  .cleint {
+    width: 35%;
+    margin: 53px;
+  }
+}
+/* -------BREAK POINTS @ 500px---------- */
+@media (max-width: 560px) {
+  .our-clients_title {
+    margin: 50px 0;
+  }
+  .cleint {
+    width: 100%;
+    margin: 0;
+  }
+}

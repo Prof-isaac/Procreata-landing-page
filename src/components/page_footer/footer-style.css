@@ -1,0 +1,61 @@
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.footer-logo {
+  margin-bottom: 25px;
+}
+
+.legal_title,
+.company_title {
+  font-family: Raleway;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #041e8b;
+}
+
+.page-footer_2nd-child > ul {
+  list-style-type: none;
+}
+.cookie-title {
+  letter-spacing: 0.25px;
+  color: #041e8b;
+  font-weight: 700;
+}
+.right {
+  text-align: center;
+}
+.prevacy-policy a {
+  text-decoration: none;
+}
+.right,
+.prevacy-policy a {
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #041e8b;
+  margin: 30px 0 83px;
+}
+
+/* -----BREAK POINTS----- */
+@media(max-width:560px){
+  .page-footer {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  .page-footer_1st-child{
+    margin-bottom: 30px;
+  }
+  .page-footer_2nd-child,.page-footer_3rd-child{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .cookie{
+    text-align: center;
+  }
+}

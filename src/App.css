@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 1.3rem;
+  font-size: 1.1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*----- Styling of the App component -----*/
+
+:root {
+  /*   --pramary-color: #bdb8d7; */
+  --pramary-color: #7b40a0;
+  --link-color: rgb(226, 226, 226);
+  --pramary-color-two: #fff;
+  --link-color-two: #000;
+  --footer-color: #282c34;
+  --form-button-color: #7b40a0;
+}
+
+body {
+  --button-color: #b1a5e4;
+  position: relative;
+}
+.App {
+  overflow-x: hidden;
+}
+.App-main,
+footer {
+  width: 95%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .App-main {
+    width: 95%;
+  }
+}

@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Raleway&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.Why-Procredita {
+  background: #f5f9ff;
+  padding: 20px 0 40px 0;
+}
+
+.Why-Procredita_title {
+  margin: 30px auto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: center;
+}
+.Why-Procredita_title span {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.Why-Procredita_bdy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Why-Procredita_bdy div:nth-child(1) {
+  font-size: 1rem;
+  width: 35%;
+  width: 60%;
+  font-family: "Raleway", sans-serif;
+  line-height: 26px;
+}
+
+.img {
+  height: 507px;
+  width: 35%;
+  background-image: url("../images-&-icons/why-procredita (2).svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  background-position: center;
+}
+
+/* --Break point for Procredita @560px------ */
+
+@media (max-width: 780px) {
+  .Why-Procredita_bdy {
+    flex-direction: column;
+   /*  margin: 70px 0; */
+  }
+
+  .Why-Procredita_bdy div:nth-child(1) {
+    width: 60%;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 560px) {
+  .Why-Procredita_bdy {
+    flex-direction: column;
+  }
+
+  .Why-Procredita_bdy div:nth-child(1) {
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+  }
+  .img {
+    width: 100%;
+    height: 380px;
+  }
+}
+
+/*------- Our Technology------ */
+.our-technology {
+  background-color: #fff;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  width: 80%;
+  box-shadow: 0px 15px 55px rgba(0, 0, 0, 0.1);
+  margin-top: -30px;
+}
+.our-technology__cards {
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #fff;
+}
+
+.our-technology__card {
+  width: 30%;
+  text-align: center;
+  height: 400px;
+  padding: 10px;
+  /*  */
+  margin: 30px 0;
+}
+
+.our-technology__card img {
+  display: inline-block;
+  margin: 69px 0 83px 0;
+}
+.our-technology__card_bdy {
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 26px;
+}
+
+.our-technology_btn {
+  width: fit-content;
+  padding: 10px 50px;
+  background: #0025b4;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.our-technology_btn:hover {
+  box-shadow: 0 0 5px #0025b4;
+  transition: all 200ms;
+}
+
+/* --Break point for Our Technology @560px------ */
+
+@media (max-width: 1024px) {
+  .our-technology__cards {
+    width: 100%;
+  }
+  .our-technology__card {
+    width: 35%;
+  }
+}
+
+@media (max-width: 780px) {
+  .our-technology__card {
+    width: 70%;
+  }
+}
+
+@media (max-width: 560px) {
+  .our-technology__cards {
+    flex-direction: column;
+    width: 100%;
+  }
+  .our-technology__card {
+    width: 100%;
+  }
+}

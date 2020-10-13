@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*----- Styling of navigation bar ------*/
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 300;
+  width: 100%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  background-color: var(--pramary-color-two);
+}
+.navbar > div {
+  margin: auto;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 98px;
+  background-color: var(--pramary-color-two);
+}
+
+/* ------------ NAV-LOGO ---------- */
+.navbar__logo {
+  width: 185px;
+  height: 30px;
+  cursor: pointer;
+  background-image: url("../images-&-icons/header-logo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar__logo img {
+  width: 185px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* -------------NAV-BAR-MENU --------- */
+.navbar__menu {
+  width: 30%;
+}
+.navbar-menu__links {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.navbar-menu__links > ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: #01114c;
+  letter-spacing: 2px;
+  padding: 33px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 0;
+}
+
+.nav_links a:hover {
+  color: var(--pramary-color);
+}
+
+.navbar-link-active {
+  border-bottom: 4px solid var(--pramary-color);
+}
+.customActive{
+  color:red
+}
+
+.hire-us {
+  padding: 8px 16px;
+  background: #0025b4;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+.hire-us:hover {
+  box-shadow: 0 0 5px #0025b4;
+  transition: all 200ms;
+}
+
+/* -------------HAMBURGER-BUTTON --------- */
+.navbar_hamburger-btn {
+  padding: 15px 12px;
+  display: grid;
+  place-items: center;
+  border-radius: 80%;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar_hamburger-btn div {
+  width: 23px;
+  height: 2.5px;
+  margin: 5px;
+  background-color: var(--link-color-two);
+  border-radius: 1rem;
+}
+
+.navbar_hamburger-btn__line1 {
+  transform: rotate(-45deg) translate(-1px, 11px);
+}
+.navbar_hamburger-btn__line2 {
+  opacity: 0;
+}
+.navbar_hamburger-btn__line3 {
+  transform: rotate(45deg) translate(1px, -11px);
+}
+
+/*-------------------- Break Points ---------------- */
+
+@media (max-width: 950px) {
+  .navbar_hamburger-btn {
+    display: block;
+  }
+  /* navbar_hamburger-btn */
+  .navbar-login {
+    display: none;
+  }
+
+  .vertical__login-btns {
+    display: block;
+  }
+  .navbar-menu__social-icons {
+    visibility: visible;
+    width: auto;
+    height: auto;
+  }
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar__menu {
+    position: absolute;
+    z-index: 10;
+    top: 96px;
+    right: 0;
+    width: 100%;
+    height: 90vh;
+    transform: translateX(100%);
+    transition: 0.5s linear;
+    display: flex;
+  }
+
+  .navbar-menu__links {
+    height: 100%;
+    width: 70%;
+    background-color: var(--pramary-color-two);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .navbar-menu__links > ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar-menu__links li {
+    padding: 15px;
+  }
+  .navbar-link-active {
+    border-bottom: 0;
+  }
+
+  .navbar-menu__overlay {
+    width: 30%;
+    height: 100%;
+    background-color: rgba(15, 12, 12, 0.6);
+    cursor: pointer;
+  }
+
+  /* when i click on the nav menu bar element with a class of nav will be given a class of active */
+  .navbar-menu-active {
+    transform: translateX(0%);
+  }
+}
+/* @media (max-width: 1024px) {
+  .navbar__menu {
+    width: 50%;
+  }
+}
+@media (max-width: 1350px) {
+  .navbar__menu {
+    width: 40%;
+  }
+} */

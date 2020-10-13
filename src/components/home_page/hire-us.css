@@ -1,0 +1,19 @@
+.hire-us{
+  display: inline-block;
+}
+.hire-us a {
+    height: 66px;
+    width: 245px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    background-color: #0025b4;
+    background-image: url("../images-&-icons/hire-us-btn.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .hire-us a {
+    box-shadow: 0 0 5px #0025b4;
+    transition: all 200ms;
+  }
